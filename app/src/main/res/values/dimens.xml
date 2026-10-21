@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+	<dimen name="gutter">14dp</dimen>
+	<dimen name="panel_radius">10dp</dimen>
+	<dimen name="dashboard_height">300dp</dimen>
+</resources>

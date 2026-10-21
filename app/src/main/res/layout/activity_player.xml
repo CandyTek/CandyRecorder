@@ -1,0 +1,162 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	android:layout_width="match_parent"
+	android:layout_height="match_parent"
+	android:orientation="vertical"
+	android:background="@color/bg">
+
+	<include layout="@layout/header_bar" />
+
+	<ScrollView
+		android:layout_width="match_parent"
+		android:layout_height="match_parent"
+		android:scrollbars="none">
+
+		<LinearLayout
+			android:layout_width="match_parent"
+			android:layout_height="wrap_content"
+			android:orientation="vertical"
+			android:paddingLeft="@dimen/gutter"
+			android:paddingRight="@dimen/gutter"
+			android:paddingBottom="20dp">
+
+			<LinearLayout
+				android:layout_width="match_parent"
+				android:layout_height="wrap_content"
+				android:orientation="vertical"
+				android:background="@drawable/bg_panel"
+				android:padding="14dp">
+
+				<TextView
+					android:id="@+id/fileName"
+					style="@style/Text.Mono"
+					android:layout_width="match_parent"
+					android:layout_height="wrap_content"
+					android:textColor="@color/accent" />
+
+				<TextView
+					android:id="@+id/fileMeta"
+					style="@style/Text.Mono.Label"
+					android:layout_width="match_parent"
+					android:layout_height="wrap_content"
+					android:layout_marginTop="4dp"
+					android:textAllCaps="false"
+					android:letterSpacing="0" />
+
+				<TextView
+					android:id="@+id/position"
+					style="@style/Text.Mono.Clock"
+					android:layout_width="wrap_content"
+					android:layout_height="wrap_content"
+					android:layout_marginTop="10dp"
+					android:textSize="34sp"
+					android:text="@string/clock_zero" />
+
+				<SeekBar
+					android:id="@+id/seek"
+					android:layout_width="match_parent"
+					android:layout_height="wrap_content"
+					android:layout_marginTop="6dp" />
+
+				<TextView
+					android:id="@+id/duration"
+					style="@style/Text.Mono.Label"
+					android:layout_width="match_parent"
+					android:layout_height="wrap_content"
+					android:gravity="end"
+					android:textAllCaps="false" />
+
+				<LinearLayout
+					android:layout_width="match_parent"
+					android:layout_height="wrap_content"
+					android:layout_marginTop="12dp"
+					android:orientation="horizontal"
+					android:gravity="center">
+
+					<Button
+						android:id="@+id/btnBack10"
+						style="@style/Btn"
+						android:layout_width="0dp"
+						android:layout_weight="1"
+						android:layout_height="wrap_content"
+						android:text="@string/player_back10" />
+
+					<Button
+						android:id="@+id/btnPlay"
+						style="@style/Btn.Accent"
+						android:layout_width="0dp"
+						android:layout_weight="1.4"
+						android:layout_height="wrap_content"
+						android:layout_marginLeft="8dp"
+						android:layout_marginRight="8dp"
+						android:text="@string/player_play" />
+
+					<Button
+						android:id="@+id/btnFwd10"
+						style="@style/Btn"
+						android:layout_width="0dp"
+						android:layout_weight="1"
+						android:layout_height="wrap_content"
+						android:text="@string/player_fwd10" />
+				</LinearLayout>
+			</LinearLayout>
+
+			<TextView
+				style="@style/Text.Mono.Label"
+				android:layout_width="match_parent"
+				android:layout_height="wrap_content"
+				android:layout_marginTop="14dp"
+				android:text="@string/player_speed" />
+
+			<LinearLayout
+				android:id="@+id/speedRow"
+				android:layout_width="match_parent"
+				android:layout_height="wrap_content"
+				android:layout_marginTop="6dp"
+				android:orientation="horizontal" />
+
+			<TextView
+				android:id="@+id/speedNote"
+				style="@style/Text.Mono.Label"
+				android:layout_width="match_parent"
+				android:layout_height="wrap_content"
+				android:layout_marginTop="4dp"
+				android:textAllCaps="false"
+				android:letterSpacing="0"
+				android:visibility="gone" />
+
+			<LinearLayout
+				android:layout_width="match_parent"
+				android:layout_height="wrap_content"
+				android:layout_marginTop="16dp"
+				android:orientation="horizontal">
+
+				<Button
+					android:id="@+id/btnShare"
+					style="@style/Btn"
+					android:layout_width="0dp"
+					android:layout_weight="1"
+					android:layout_height="wrap_content"
+					android:text="@string/action_share" />
+
+				<Button
+					android:id="@+id/btnInfo"
+					style="@style/Btn"
+					android:layout_width="0dp"
+					android:layout_weight="1"
+					android:layout_height="wrap_content"
+					android:layout_marginLeft="8dp"
+					android:layout_marginRight="8dp"
+					android:text="@string/action_info" />
+
+				<Button
+					android:id="@+id/btnDelete"
+					style="@style/Btn.Danger"
+					android:layout_width="0dp"
+					android:layout_weight="1"
+					android:layout_height="wrap_content"
+					android:text="@string/action_delete" />
+			</LinearLayout>
+		</LinearLayout>
+	</ScrollView>
+</LinearLayout>

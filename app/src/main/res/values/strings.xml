@@ -1,0 +1,280 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+	<string name="app_name">Candy Recorder</string>
+
+	<!-- Navigation / titles -->
+	<string name="nav_history">HISTORY</string>
+	<string name="nav_settings">SETUP</string>
+	<string name="nav_back">&lt;</string>
+	<string name="title_settings">Parameters</string>
+	<string name="title_history">History</string>
+	<string name="title_player">Player</string>
+	<string name="title_info">Audio parameters</string>
+
+	<!-- Transport / state -->
+	<string name="clock_zero">00:00:00.000</string>
+	<string name="action_rec">REC</string>
+	<string name="action_pause">Pause</string>
+	<string name="action_resume">Resume</string>
+	<string name="action_stop">Stop</string>
+	<string name="action_share">Share</string>
+	<string name="action_info">Info</string>
+	<string name="action_delete">Delete</string>
+	<string name="action_rename">Rename</string>
+	<string name="action_refresh">Refresh</string>
+	<string name="action_reset">Reset</string>
+	<string name="action_copy">Copy</string>
+	<string name="state_standby">Standby</string>
+	<string name="state_preparing">Preparing</string>
+	<string name="state_recording">● Recording</string>
+	<string name="state_paused">Paused</string>
+	<string name="state_stopping">Finalizing</string>
+	<string name="saved_as">Saved %1$s (%2$s)</string>
+	<string name="copied">Copied to clipboard</string>
+	<string name="yes">yes</string>
+	<string name="no">no</string>
+	<string name="on">on</string>
+	<string name="off">off</string>
+
+	<!-- Engines -->
+	<string name="engine_a">Engine A · MediaRecorder (fast, high compatibility)</string>
+	<string name="engine_b">Engine B · AudioRecord (hardcore, raw PCM pipeline)</string>
+	<string name="engine_a_short">ENGINE A</string>
+	<string name="engine_b_short">ENGINE B</string>
+
+	<!-- Audio sources -->
+	<string name="src_default">Default</string>
+	<string name="src_mic">Microphone (MIC)</string>
+	<string name="src_camcorder">Camcorder (rear-facing tuning)</string>
+	<string name="src_voice_recognition">Voice recognition (flat, AGC off)</string>
+	<string name="src_voice_communication">Voice communication (AEC/NS tuned)</string>
+	<string name="src_unprocessed">Unprocessed (raw HAL, no DSP)</string>
+	<string name="src_voice_performance">Voice performance (low latency)</string>
+	<string name="src_playback_capture">Internal audio · playback capture (MediaProjection)</string>
+	<string name="src_remote_submix">Internal audio · REMOTE_SUBMIX</string>
+	<string name="src_voice_call">Voice call (up + down link)</string>
+	<string name="src_voice_uplink">Voice call uplink</string>
+	<string name="src_voice_downlink">Voice call downlink</string>
+	<string name="suffix_privileged"> · privileged</string>
+
+	<!-- Engine A encoders / containers -->
+	<string name="enc_aac">AAC-LC</string>
+	<string name="enc_he_aac">HE-AAC (AAC+)</string>
+	<string name="enc_aac_eld">AAC-ELD (low delay)</string>
+	<string name="enc_opus">Opus</string>
+	<string name="enc_amr_nb">AMR-NB (8 kHz)</string>
+	<string name="enc_amr_wb">AMR-WB (16 kHz)</string>
+	<string name="fmt_m4a">M4A (MPEG-4 audio)</string>
+	<string name="fmt_mp4">MP4 (MPEG-4)</string>
+	<string name="fmt_3gp">3GP (3GPP)</string>
+	<string name="fmt_ogg">OGG (Opus)</string>
+	<string name="fmt_aac_adts">AAC (ADTS stream)</string>
+	<string name="fmt_mpeg2ts">TS (MPEG-2 transport stream)</string>
+	<string name="fmt_amr_nb">AMR (AMR-NB raw)</string>
+	<string name="fmt_amr_wb">AWB (AMR-WB raw)</string>
+
+	<!-- Engine B codecs -->
+	<string name="codec_wav">WAV (PCM, lossless)</string>
+	<string name="codec_pcm">RAW PCM (headerless)</string>
+	<string name="codec_flac">FLAC (lossless, MediaCodec)</string>
+	<string name="codec_aac_lc">AAC-LC in M4A (MediaCodec + MediaMuxer)</string>
+	<string name="codec_aac_he">HE-AAC in M4A (MediaCodec + MediaMuxer)</string>
+	<string name="codec_aac_eld">AAC-ELD in M4A (MediaCodec + MediaMuxer)</string>
+	<string name="codec_opus">Opus in OGG (MediaCodec + MediaMuxer)</string>
+
+	<!-- PCM layouts -->
+	<string name="pcm_16">16-bit signed integer</string>
+	<string name="pcm_8">8-bit unsigned integer</string>
+	<string name="pcm_24">24-bit packed integer</string>
+	<string name="pcm_32">32-bit signed integer</string>
+	<string name="pcm_float">32-bit float</string>
+	<string name="ch_mono">Mono (1 ch)</string>
+	<string name="ch_stereo">Stereo (2 ch)</string>
+
+	<!-- Bitrate modes / effects / direction / routes -->
+	<string name="brm_default">Encoder default</string>
+	<string name="brm_cbr">CBR · constant bitrate</string>
+	<string name="brm_vbr">VBR · variable bitrate</string>
+	<string name="brm_cq">CQ · constant quality</string>
+	<string name="fx_default">Platform default</string>
+	<string name="fx_on">Force on</string>
+	<string name="fx_off">Force off</string>
+	<string name="dir_unspecified">Unspecified (system default)</string>
+	<string name="dir_towards_user">Towards user (front)</string>
+	<string name="dir_away_from_user">Away from user (back)</string>
+	<string name="dir_external">External (follow routed device)</string>
+	<string name="field_off">Do not set</string>
+	<string name="field_wide_max">-1.0 · widest</string>
+	<string name="field_wide">-0.5 · wide</string>
+	<string name="field_normal">0.0 · normal</string>
+	<string name="field_narrow">+0.5 · narrow</string>
+	<string name="field_narrow_max">+1.0 · narrowest (zoom)</string>
+	<string name="route_auto">Automatic (system routing)</string>
+	<string name="route_builtin">Built-in microphone</string>
+	<string name="route_wired">Wired headset (3.5 mm)</string>
+	<string name="route_bt_sco">Bluetooth headset (SCO link)</string>
+	<string name="route_usb">USB / Type-C audio device</string>
+	<string name="storage_app">App folder · Android/data/…/files/Recordings</string>
+	<string name="storage_public">Public folder · Music/CandyRecorder</string>
+	<string name="storage_app_short">app folder</string>
+	<string name="storage_public_short">Music</string>
+	<string name="meter_fast">Fast · 60 fps</string>
+	<string name="meter_slow">Relaxed · 25 fps</string>
+
+	<!-- Settings sections -->
+	<string name="sec_engine">Engine</string>
+	<string name="sec_capture">Capture</string>
+	<string name="sec_format">Format &amp; codec</string>
+	<string name="sec_processing">Processing (android.media.audiofx)</string>
+	<string name="sec_silence">Silence auto-skip</string>
+	<string name="sec_storage">Storage</string>
+	<string name="sec_dashboard">Dashboard</string>
+	<string name="sec_device">Device</string>
+
+	<!-- Settings rows -->
+	<string name="set_engine">Recording engine</string>
+	<string name="set_engine_desc">A packs the stream through MediaRecorder. B reads raw PCM from AudioRecord and gives full control over layout, buffers, effects and the codec.</string>
+	<string name="set_source">Audio source</string>
+	<string name="set_source_desc">Selects the HAL input path and its default DSP chain. Internal-audio sources need API 29 (playback capture) or a privileged build (REMOTE_SUBMIX, voice call).</string>
+	<string name="set_channels">Channels</string>
+	<string name="set_channels_desc">Mono or stereo capture. Many phones deliver a mono signal duplicated to both channels.</string>
+	<string name="set_sample_rate">Sample rate</string>
+	<string name="set_sample_rate_desc">Requested capture rate. AMR forces 8/16 kHz. Rates the HAL cannot do natively are resampled by the framework.</string>
+	<string name="set_route">Input device</string>
+	<string name="set_route_desc">Preferred physical input. Bluetooth opens the SCO link with AudioManager.startBluetoothSco() before capture; USB / Type-C headsets are selected via setPreferredDevice().</string>
+	<string name="set_direction">Directional pickup</string>
+	<string name="set_direction_desc">MicrophoneDirection API (API 29+). Lets multi-mic devices steer the beam towards or away from the user.</string>
+	<string name="set_field">Pickup field dimension</string>
+	<string name="set_field_desc">Zoom factor from -1 (widest) to +1 (narrowest) for devices that support beamforming.</string>
+	<string name="set_privacy">Privacy sensitive</string>
+	<string name="set_privacy_desc">Marks the capture as privacy sensitive (API 30+): other apps and assistants cannot concurrently capture.</string>
+	<string name="set_codec_b">Output codec / container</string>
+	<string name="set_codec_b_desc">PCM goes straight to disk. Compressed options use the platform MediaCodec encoders with 16-bit input.</string>
+	<string name="set_pcm">Sample format</string>
+	<string name="set_pcm_desc">PCM layout delivered by AudioRecord. 24/32-bit need API 31, float needs API 23. Used verbatim for WAV / RAW.</string>
+	<string name="set_bitrate">Bitrate</string>
+	<string name="set_bitrate_desc">Target bitrate for the MediaCodec encoder.</string>
+	<string name="set_bitrate_desc_a">Target bitrate for MediaRecorder (AMR codecs use their fixed rates).</string>
+	<string name="set_bitrate_mode">Bitrate mode</string>
+	<string name="set_bitrate_mode_desc">KEY_BITRATE_MODE for the encoder. Not every codec honours every mode.</string>
+	<string name="set_flac_level">FLAC compression level</string>
+	<string name="set_flac_level_desc">0 = fastest / largest … 8 = slowest / smallest.</string>
+	<string name="set_buffer">AudioRecord buffer</string>
+	<string name="set_buffer_desc">Multiplier applied to getMinBufferSize(). Smaller = lower latency, larger = safer against overruns.</string>
+	<string name="set_format_a">Container</string>
+	<string name="set_format_a_desc">MediaRecorder output format. Changing it auto-selects a compatible encoder.</string>
+	<string name="set_encoder_a">Audio encoder</string>
+	<string name="set_encoder_a_desc">Only encoders valid for the chosen container are listed.</string>
+	<string name="set_raw">Raw / pure audio mode</string>
+	<string name="set_raw_desc">Uses the UNPROCESSED source when the device supports it and forces NS / AEC / AGC off, so the file holds the untouched microphone signal.</string>
+	<string name="set_ns">Noise suppressor</string>
+	<string name="set_ns_desc">android.media.audiofx.NoiseSuppressor attached to the capture session.</string>
+	<string name="set_aec">Acoustic echo canceler</string>
+	<string name="set_aec_desc">android.media.audiofx.AcousticEchoCanceler attached to the capture session.</string>
+	<string name="set_agc">Automatic gain control</string>
+	<string name="set_agc_desc">android.media.audiofx.AutomaticGainControl attached to the capture session.</string>
+	<string name="set_fx_engine_a">Effects with Engine A</string>
+	<string name="set_fx_engine_a_desc">MediaRecorder does not expose its audio session, so effects follow the audio source preset. Use raw mode or switch to Engine B for explicit control.</string>
+	<string name="set_silence">Skip silence</string>
+	<string name="set_silence_desc">Drops audio while the level stays under the threshold. Engine B drops PCM chunks; Engine A pauses / resumes MediaRecorder (API 24+).</string>
+	<string name="set_silence_db">Threshold</string>
+	<string name="set_silence_db_desc">RMS level (Engine B) or peak level (Engine A) below which audio counts as silence.</string>
+	<string name="set_silence_hold">Hold time</string>
+	<string name="set_silence_hold_desc">How long the signal must stay quiet before skipping starts. Skipping stops instantly on sound.</string>
+	<string name="set_storage">Location</string>
+	<string name="set_storage_desc">Both are on external storage. The public Music folder needs legacy storage access (targetSdk 29 or storage permission); otherwise the app folder is used.</string>
+	<string name="set_prefix">File name prefix</string>
+	<string name="set_prefix_desc">Files are named PREFIX_yyyyMMdd_HHmmss[.params].ext</string>
+	<string name="set_folder">Current folder</string>
+	<string name="set_fft">Spectrum FFT size</string>
+	<string name="set_fft_desc">Larger = finer frequency resolution, slower response.</string>
+	<string name="set_meter_speed">Meter refresh</string>
+	<string name="set_meter_speed_desc">How often Engine B pushes frames to the dashboard.</string>
+	<string name="set_keep_screen">Keep screen on</string>
+	<string name="set_keep_screen_desc">While recording, on the dashboard screen.</string>
+	<string name="info_api">Platform</string>
+	<string name="info_unprocessed">UNPROCESSED source supported</string>
+	<string name="info_public_storage">Public Music folder writable</string>
+	<string name="info_inputs">Input devices now</string>
+	<string name="info_inputs_tap">Tap to list attached input devices with their supported rates, channels and encodings.</string>
+	<string name="info_inputs_none">No input devices reported (API 23+ required).</string>
+	<string name="reset_confirm">Restore every parameter to its default value?</string>
+
+	<!-- Units -->
+	<string name="unit_hz">%1$d Hz</string>
+	<string name="unit_bps">%1$d bps</string>
+	<string name="unit_ms">%1$d ms</string>
+	<string name="unit_dbfs">%1$d dBFS</string>
+	<string name="unit_x">×%1$d</string>
+	<string name="unit_points">%1$d points</string>
+
+	<!-- Stats panel -->
+	<string name="st_engine">Engine</string>
+	<string name="st_source">Source</string>
+	<string name="st_device">Requested device</string>
+	<string name="st_routed">Routed device</string>
+	<string name="st_mics">Active mics</string>
+	<string name="st_sample_rate">Sample rate</string>
+	<string name="st_channels">Channels</string>
+	<string name="st_encoding">Capture format</string>
+	<string name="st_codec">Codec</string>
+	<string name="st_bitrate">Bitrate</string>
+	<string name="st_route">Input route</string>
+	<string name="st_silence">Silence skip</string>
+	<string name="st_raw_mode">Raw mode</string>
+	<string name="st_api">Platform</string>
+	<string name="st_unprocessed">UNPROCESSED</string>
+	<string name="st_buffer">Buffer</string>
+	<string name="st_chunk">Read chunk</string>
+	<string name="st_read_time">Read call</string>
+	<string name="st_drift">Clock drift</string>
+	<string name="st_file_size">File size</string>
+	<string name="st_frames">Frames written</string>
+	<string name="st_skipped">Skipped</string>
+	<string name="st_gate">Gate</string>
+	<string name="gate_open">open</string>
+	<string name="gate_closed">CLOSED (skipping)</string>
+	<string name="st_peak">Peak L/R</string>
+	<string name="st_rms">RMS L/R</string>
+	<string name="st_clips">Clipped chunks</string>
+	<string name="st_session">Audio session</string>
+	<string name="st_path">File</string>
+
+	<!-- History / player / info -->
+	<string name="history_empty">No recordings yet</string>
+	<string name="history_folders">app: %1$s\npublic: %2$s</string>
+	<string name="delete_confirm">Delete %1$s permanently?</string>
+	<string name="player_play">Play</string>
+	<string name="player_pause">Pause</string>
+	<string name="player_back10">-10s</string>
+	<string name="player_fwd10">+10s</string>
+	<string name="player_speed">Playback speed</string>
+	<string name="player_speed_unsupported">Variable speed needs API 23+ on this file type.</string>
+	<string name="info_loading">Probing file…</string>
+
+	<!-- Notification -->
+	<string name="notif_channel">Recording session</string>
+	<string name="notif_channel_desc">Shown while a recording is in progress.</string>
+	<string name="notif_recording">Recording</string>
+	<string name="notif_paused">Recording paused</string>
+	<string name="notif_preparing">Preparing recording…</string>
+
+	<!-- Errors / warnings -->
+	<string name="err_title">Recording problem</string>
+	<string name="err_no_mic_permission">Microphone permission is required.</string>
+	<string name="err_foreground">Could not start the foreground service: %1$s</string>
+	<string name="err_capture_denied">Internal audio capture was not permitted.</string>
+	<string name="err_capture_api">Playback capture needs Android 10 (API 29) or newer.</string>
+	<string name="err_capture_engine">Playback capture works with Engine B (AudioRecord) only.</string>
+	<string name="err_format_api">The selected container is not available on this Android version.</string>
+	<string name="err_encoder_api">The selected encoder is not available on this Android version.</string>
+	<string name="err_format_encoder">The selected encoder cannot be stored in the selected container.</string>
+	<string name="err_codec_api">The selected codec is not available on this Android version.</string>
+	<string name="err_pcm_api">The selected sample format is not available on this Android version.</string>
+	<string name="err_pause_unsupported">Pause needs API 24 with Engine A.</string>
+	<string name="err_missing_file">File not found.</string>
+	<string name="err_player">Cannot play: %1$s</string>
+	<string name="err_rename">Rename failed (name in use or invalid).</string>
+	<string name="err_delete">Delete failed.</string>
+	<string name="warn_public_fallback">Storage permission denied: using the app folder instead.</string>
+</resources>

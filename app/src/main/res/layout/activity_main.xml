@@ -1,0 +1,163 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	android:layout_width="match_parent"
+	android:layout_height="match_parent"
+	android:orientation="vertical"
+	android:background="@color/bg"
+	android:paddingLeft="@dimen/gutter"
+	android:paddingRight="@dimen/gutter"
+	android:paddingTop="8dp"
+	android:paddingBottom="10dp">
+
+	<LinearLayout
+		android:layout_width="match_parent"
+		android:layout_height="wrap_content"
+		android:orientation="horizontal"
+		android:gravity="center_vertical">
+
+		<TextView
+			android:layout_width="0dp"
+			android:layout_height="wrap_content"
+			android:layout_weight="1"
+			style="@style/Text.Title"
+			android:textColor="@color/accent"
+			android:text="@string/app_name" />
+
+		<Button
+			android:id="@+id/btnHistory"
+			style="@style/Btn.Icon"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:layout_marginRight="6dp"
+			android:text="@string/nav_history" />
+
+		<Button
+			android:id="@+id/btnSettings"
+			style="@style/Btn.Icon"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:text="@string/nav_settings" />
+	</LinearLayout>
+
+	<LinearLayout
+		android:layout_width="match_parent"
+		android:layout_height="wrap_content"
+		android:layout_marginTop="8dp"
+		android:orientation="vertical"
+		android:background="@drawable/bg_panel"
+		android:paddingLeft="14dp"
+		android:paddingRight="14dp"
+		android:paddingTop="8dp"
+		android:paddingBottom="10dp">
+
+		<TextView
+			android:id="@+id/clock"
+			style="@style/Text.Mono.Clock"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:text="@string/clock_zero" />
+
+		<LinearLayout
+			android:layout_width="match_parent"
+			android:layout_height="wrap_content"
+			android:orientation="horizontal"
+			android:gravity="center_vertical">
+
+			<TextView
+				android:id="@+id/stateBadge"
+				style="@style/Text.Mono.Label"
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:background="@drawable/badge_dim"
+				android:paddingLeft="8dp"
+				android:paddingRight="8dp"
+				android:paddingTop="2dp"
+				android:paddingBottom="2dp"
+				android:text="@string/state_standby" />
+
+			<TextView
+				android:id="@+id/stateLine"
+				style="@style/Text.Mono.Label"
+				android:layout_width="0dp"
+				android:layout_height="wrap_content"
+				android:layout_weight="1"
+				android:layout_marginLeft="10dp"
+				android:textAllCaps="false"
+				android:letterSpacing="0"
+				android:singleLine="true"
+				android:ellipsize="middle" />
+		</LinearLayout>
+
+		<TextView
+			android:id="@+id/configLine"
+			style="@style/Text.Mono.Value"
+			android:layout_width="match_parent"
+			android:layout_height="wrap_content"
+			android:layout_marginTop="6dp"
+			android:singleLine="true"
+			android:ellipsize="end" />
+	</LinearLayout>
+
+	<com.candytek.recorder.ui.DashboardView
+		android:id="@+id/dashboard"
+		android:layout_width="match_parent"
+		android:layout_height="@dimen/dashboard_height"
+		android:layout_marginTop="8dp"
+		android:background="@drawable/bg_panel" />
+
+	<ScrollView
+		android:layout_width="match_parent"
+		android:layout_height="0dp"
+		android:layout_weight="1"
+		android:layout_marginTop="8dp"
+		android:background="@drawable/bg_panel"
+		android:scrollbars="none">
+
+		<LinearLayout
+			android:id="@+id/statsPanel"
+			android:layout_width="match_parent"
+			android:layout_height="wrap_content"
+			android:orientation="vertical"
+			android:paddingLeft="14dp"
+			android:paddingRight="14dp"
+			android:paddingTop="8dp"
+			android:paddingBottom="8dp" />
+	</ScrollView>
+
+	<LinearLayout
+		android:layout_width="match_parent"
+		android:layout_height="wrap_content"
+		android:layout_marginTop="10dp"
+		android:orientation="horizontal"
+		android:gravity="center">
+
+		<Button
+			android:id="@+id/btnPause"
+			style="@style/Btn"
+			android:layout_width="0dp"
+			android:layout_weight="1"
+			android:layout_height="wrap_content"
+			android:text="@string/action_pause" />
+
+		<Button
+			android:id="@+id/btnRecord"
+			android:layout_width="76dp"
+			android:layout_height="76dp"
+			android:layout_marginLeft="14dp"
+			android:layout_marginRight="14dp"
+			android:background="@drawable/btn_record"
+			android:fontFamily="monospace"
+			android:textStyle="bold"
+			android:textColor="@color/white"
+			android:textSize="12sp"
+			android:text="@string/action_rec" />
+
+		<Button
+			android:id="@+id/btnStop"
+			style="@style/Btn.Danger"
+			android:layout_width="0dp"
+			android:layout_weight="1"
+			android:layout_height="wrap_content"
+			android:text="@string/action_stop" />
+	</LinearLayout>
+</LinearLayout>

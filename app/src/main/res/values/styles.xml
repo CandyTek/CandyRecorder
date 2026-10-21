@@ -1,0 +1,93 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+
+	<style name="Theme.CandyRecorder" parent="@android:style/Theme.Material.NoActionBar">
+		<item name="android:colorPrimary">@color/bg</item>
+		<item name="android:colorPrimaryDark">@color/bg</item>
+		<item name="android:colorAccent">@color/accent</item>
+		<item name="android:windowBackground">@color/bg</item>
+		<item name="android:statusBarColor">@color/bg</item>
+		<item name="android:navigationBarColor">@color/bg</item>
+		<item name="android:textColorPrimary">@color/text</item>
+		<item name="android:textColorSecondary">@color/text_dim</item>
+		<item name="android:colorControlNormal">@color/text_dim</item>
+		<item name="android:colorControlActivated">@color/accent</item>
+		<item name="android:colorControlHighlight">@color/accent_dim</item>
+		<item name="android:alertDialogTheme">@style/Theme.CandyRecorder.Dialog</item>
+		<item name="android:windowLightStatusBar" tools:targetApi="m">false</item>
+		<item name="android:windowLightNavigationBar" tools:targetApi="o_mr1">false</item>
+		<item name="android:windowLayoutInDisplayCutoutMode" tools:targetApi="o_mr1">shortEdges</item>
+	</style>
+
+	<style name="Theme.CandyRecorder.Dialog" parent="@android:style/Theme.Material.Dialog.Alert">
+		<item name="android:colorAccent">@color/accent</item>
+		<item name="android:colorBackground">@color/bg_elevated</item>
+		<item name="android:textColorPrimary">@color/text</item>
+		<item name="android:textColorSecondary">@color/text_dim</item>
+		<item name="android:textColorAlertDialogListItem">@color/text</item>
+	</style>
+
+	<style name="Text" parent="@android:style/TextAppearance.Material">
+		<item name="android:textColor">@color/text</item>
+		<item name="android:textSize">14sp</item>
+	</style>
+
+	<style name="Text.Mono">
+		<item name="android:fontFamily">monospace</item>
+	</style>
+
+	<style name="Text.Mono.Label">
+		<item name="android:textColor">@color/text_dim</item>
+		<item name="android:textSize">11sp</item>
+		<item name="android:letterSpacing">0.12</item>
+		<item name="android:textAllCaps">true</item>
+	</style>
+
+	<style name="Text.Mono.Value">
+		<item name="android:textColor">@color/accent</item>
+		<item name="android:textSize">13sp</item>
+	</style>
+
+	<style name="Text.Mono.Clock">
+		<item name="android:textColor">@color/text</item>
+		<item name="android:textSize">44sp</item>
+		<item name="android:letterSpacing">0.02</item>
+	</style>
+
+	<style name="Text.Title">
+		<item name="android:fontFamily">monospace</item>
+		<item name="android:textSize">18sp</item>
+		<item name="android:letterSpacing">0.18</item>
+		<item name="android:textAllCaps">true</item>
+		<item name="android:textStyle">bold</item>
+	</style>
+
+	<style name="Btn" parent="@android:style/Widget.Material.Button.Borderless">
+		<item name="android:fontFamily">monospace</item>
+		<item name="android:textAllCaps">true</item>
+		<item name="android:letterSpacing">0.1</item>
+		<item name="android:textSize">13sp</item>
+		<item name="android:textColor">@color/text</item>
+		<item name="android:background">@drawable/btn_ghost</item>
+		<item name="android:paddingLeft">16dp</item>
+		<item name="android:paddingRight">16dp</item>
+		<item name="android:minHeight">44dp</item>
+	</style>
+
+	<style name="Btn.Accent">
+		<item name="android:textColor">@color/bg</item>
+		<item name="android:background">@drawable/btn_accent</item>
+		<item name="android:textStyle">bold</item>
+	</style>
+
+	<style name="Btn.Danger">
+		<item name="android:textColor">@color/red</item>
+		<item name="android:background">@drawable/btn_danger</item>
+	</style>
+
+	<style name="Btn.Icon">
+		<item name="android:paddingLeft">10dp</item>
+		<item name="android:paddingRight">10dp</item>
+		<item name="android:minWidth">44dp</item>
+		<item name="android:textColor">@color/accent</item>
+	</style>
+</resources>

@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	android:layout_width="match_parent"
+	android:layout_height="wrap_content"
+	android:orientation="horizontal"
+	android:gravity="center_vertical"
+	android:background="@drawable/bg_panel"
+	android:padding="12dp">
+
+	<TextView
+		android:id="@+id/ext"
+		style="@style/Text.Mono.Label"
+		android:layout_width="52dp"
+		android:layout_height="wrap_content"
+		android:background="@drawable/badge"
+		android:gravity="center"
+		android:paddingTop="4dp"
+		android:paddingBottom="4dp"
+		android:textColor="@color/accent"
+		android:letterSpacing="0.05" />
+
+	<LinearLayout
+		android:layout_width="0dp"
+		android:layout_height="wrap_content"
+		android:layout_weight="1"
+		android:layout_marginLeft="12dp"
+		android:orientation="vertical">
+
+		<TextView
+			android:id="@+id/name"
+			style="@style/Text.Mono"
+			android:layout_width="match_parent"
+			android:layout_height="wrap_content"
+			android:singleLine="true"
+			android:ellipsize="middle" />
+
+		<TextView
+			android:id="@+id/meta"
+			style="@style/Text.Mono.Label"
+			android:layout_width="match_parent"
+			android:layout_height="wrap_content"
+			android:layout_marginTop="3dp"
+			android:textAllCaps="false"
+			android:letterSpacing="0" />
+	</LinearLayout>
+
+	<TextView
+		android:id="@+id/duration"
+		style="@style/Text.Mono.Value"
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+		android:layout_marginLeft="8dp" />
+</LinearLayout>

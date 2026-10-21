@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	android:layout_width="match_parent"
+	android:layout_height="match_parent"
+	android:orientation="vertical"
+	android:background="@color/bg">
+
+	<include layout="@layout/header_bar" />
+
+	<TextView
+		android:id="@+id/folderLine"
+		style="@style/Text.Mono.Label"
+		android:layout_width="match_parent"
+		android:layout_height="wrap_content"
+		android:paddingLeft="@dimen/gutter"
+		android:paddingRight="@dimen/gutter"
+		android:paddingBottom="6dp"
+		android:textAllCaps="false"
+		android:letterSpacing="0" />
+
+	<FrameLayout
+		android:layout_width="match_parent"
+		android:layout_height="match_parent">
+
+		<ListView
+			android:id="@+id/list"
+			android:layout_width="match_parent"
+			android:layout_height="match_parent"
+			android:paddingLeft="@dimen/gutter"
+			android:paddingRight="@dimen/gutter"
+			android:clipToPadding="false"
+			android:divider="@null"
+			android:dividerHeight="8dp"
+			android:scrollbars="none" />
+
+		<TextView
+			android:id="@+id/empty"
+			style="@style/Text.Mono"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:layout_gravity="center"
+			android:textColor="@color/text_dim"
+			android:text="@string/history_empty"
+			android:visibility="gone" />
+	</FrameLayout>
+</LinearLayout>
