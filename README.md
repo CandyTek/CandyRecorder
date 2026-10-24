@@ -58,3 +58,9 @@ pause / resume / stop actions (`foregroundServiceType="microphone|mediaProjectio
 
 Open the project in Android Studio or run `gradlew assembleDebug` with a JDK 17
 (the Gradle 8.0 wrapper does not run on JDK 21). `compileSdk 34`, `minSdk 21`, `targetSdk 29`.
+
+---
+
+| | | |
+|--|-|-|
+| ![01.webp](doc/01.webp) | ![03.webp](doc/03.webp) | ![02.webp](doc/02.webp) | 
